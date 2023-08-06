@@ -48,7 +48,7 @@
 
 
 
-//     const postal = await fetch(`https://api.postalpincode.in/pincode/110001`)
+//     const postal = await fetch(`https://api.postalpincode.in/pincode/800001`)
 //     const postOfc = await postal.json()
 //     const postOffice = postOfc[0].PostOffice;
 
