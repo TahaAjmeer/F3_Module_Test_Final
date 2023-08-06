@@ -121,11 +121,11 @@ async function getData() {
         var longitude = latLong[1];
     
         // Assuming you have a <div> with the ID "map-container" to show the map
-        var mapContainer = document.getElementById("map-container");
-         mapContainer.innerHTML = `<iframe width="100%" height="300" frameborder="0" style="border:0" src="https://maps.google.com/maps?q=${25.5748105},${85.0635838}&hl=en&z=14&output=embed"></iframe>`;
+var mapContainer = document.getElementById("map-container");
+        mapContainer.innerHTML = `<iframe width="100%" height="300" frameborder="0" style="border:0" src="https://maps.google.com/maps?q=${25.5748105},${85.0635838}&hl=en&z=14&output=embed"></iframe>`;
     }
 
-
+    // const postal = await fetch(`https://api.postalpincode.in/pincode/800001`)
 
     const postal = await fetch(`https://api.postalpincode.in/pincode/800001`)
     const postOfc = await postal.json()
@@ -143,6 +143,7 @@ async function getData() {
                     <div>Division : ${element.Division}</div>
                     </div>`;
             });
+    
 
 
 }
